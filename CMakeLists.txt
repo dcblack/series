@@ -1,11 +1,11 @@
-# CMakeLists.txt -- Top-level CMake script
+#!cmake -B build
 
 cmake_minimum_required (VERSION 3.1)
-project (series CXX C)
+project(series LANGUAGES CXX)
+set (CMAKE_CXX_STANDARD 14 CACHE STRING "C++ standard to build all targets. Supported values are 98, 11, and 14.")
 
-include_directories (/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/)
+add_executable(series series_test.cpp)
 
-set (CMAKE_CXX_STANDARD 14 CACHE STRING
-     "C++ standard to build all targets. Supported values are 98, 11, and 14.")
+add_executable(coord coord_test.cpp)
 
-add_executable(series series.cpp)
+# vim:nospell:syntax=cmake
