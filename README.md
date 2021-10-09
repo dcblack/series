@@ -3,7 +3,7 @@
 About this project
 --------------------
 
-This project defines simple header-only C++14 class to represent seriess and two convenience functions to enable using for-loops with following syntax:
+This project defines simple header-only C++14 class to represent series and two convenience functions to enable using for-loops with following syntax:
 
 ```c++
 for ( auto i: series(4) ) // equivalent to for( int i=0; i<4; ++i )
@@ -41,13 +41,13 @@ Advanced series can be had using the class, thusly:
 | `cout << rint5();`                                                       | 2                      |
 | `cout << *rint5;`                                                        | 0                      |
 | `cout <<rint5.size();`                                                   | 0                      |
-| `for( auto i:series(0) )     cout << i << “,”;                           | 0,                     |
-| `for( auto i:series(1) )     cout << i << “,”;                           | 0,                     |
-| `for( auto i:series(2) )     cout << i << “,”;                           | 0,1,                   |
-| `for( auto i:series(3) )     cout << i << “,”;                           | 0,1,2,                 |
-| `for( auto i:series(1,3) )   cout << i << “,”;                           | 1,2,3,                 |
+| `for( auto i:series(0) )     cout << i << “,”;`                          | 0,                     |
+| `for( auto i:series(1) )     cout << i << “,”;`                          | 0,                     |
+| `for( auto i:series(2) )     cout << i << “,”;`                          | 0,1,                   |
+| `for( auto i:series(3) )     cout << i << “,”;`                          | 0,1,2,                 |
+| `for( auto i:series(1,3) )   cout << i << “,”;`                          | 1,2,3,                 |
 | `for( auto i:series(1,3,2) ) cout << i << “,”;`                          | 1,3,                   |
-| `for( auto i:series(-3) )    cout << i << “,”;                           | -2,-1,0,               |
+| `for( auto i:series(-3) )    cout << i << “,”;`                          | -2,-1,0,               |
 
 Files
 -----
@@ -69,7 +69,7 @@ apache
 Viewing
 -------
 
-This file uses [**GitHub flavored markdown**](https://github.github.com/gfm/). For measier viewing use one of:
+This file uses [**GitHub flavored markdown**](https://github.github.com/gfm/). For easier viewing use one of:
 1. Linux/OSX/Windows: [Typora.io](https://typora.io)
 2. Online: [StackEdit](https://stackedit.io/editor)
 3. General: [VIm](http://www.vim.org)
