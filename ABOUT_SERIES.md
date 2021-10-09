@@ -16,38 +16,38 @@ Note: There is one deviant case: `series(0)`, which is equivalent to `series(0,0
 
 Advanced series can be had using the class, thusly:
 
-| Example                                                                 | Result                |
-| :---------------------------------------------------------------------- | :-------------------- |
-| `for( auto i:Series<>(3) )   cout << i << ",";`                          | 0,1,2,                |
-| `for( auto i:Series<>(1,3) ) cout << i << ",";`                          | 1,2,3,                |
-| `for( auto i:Series<>(1,3,2) ) cout << i << ",";`                        | 1,3,                  |
-| `for( auto i:Series<>(10,14,2) ) cout << i << ",";`                      | 10,12,14,             |
-| `for( auto i:Series<>(1) ) cout << i << ",";`                            | 0,                    |
-| `for( auto i:Series<>(2) ) cout << i << ",";`                            | 0,1,                  |
-| `for( auto i:Series<>(1,1) ) cout << i << ",";`                          | 1,                    |
-| `for( auto i:Series<>(10,14,-2) ) cout << i << ",”; // sign corrected`   | 10,12,14,             |
-| `for( auto i:Series<>(14,10,2) ) cout << i << ",";`                      | 14,12,10,             |
-| `for( auto i:Series<>(14,10,-2) ) cout << i << ",”; // sign corrected`   | 14,12,10,             |
-| `for( auto i:Series<>(0,-2)) cout << i << ",";`                          | 0,-1 -2,              |
-| `for( auto i:Series<double>(7.1,7.3,0.1)) cout << i << ",";`             | 7.1,7.2,7.3,7.4,      |
-| `for( auto i:Series<MyT>(3.75,3.70,-0.02)) cout << i << ",";`            | 3.75,3.73,3.71,3.69,  |
+| Example                                                                  | Result                 |
+| :----------------------------------------------------------------------- | :--------------------- |
+| `for( auto i:Series<>(3) )   cout << i << ",";`                          | 0,1,2,                 |
+| `for( auto i:Series<>(1,3) ) cout << i << ",";`                          | 1,2,3,                 |
+| `for( auto i:Series<>(1,3,2) ) cout << i << ",";`                        | 1,3,                   |
+| `for( auto i:Series<>(10,14,2) ) cout << i << ",";`                      | 10,12,14,              |
+| `for( auto i:Series<>(1) ) cout << i << ",";`                            | 0,                     |
+| `for( auto i:Series<>(2) ) cout << i << ",";`                            | 0,1,                   |
+| `for( auto i:Series<>(1,1) ) cout << i << ",";`                          | 1,                     |
+| `for( auto i:Series<>(10,14,-2) ) cout << i << ",”; // sign corrected`   | 10,12,14,              |
+| `for( auto i:Series<>(14,10,2) ) cout << i << ",";`                      | 14,12,10,              |
+| `for( auto i:Series<>(14,10,-2) ) cout << i << ",”; // sign corrected`   | 14,12,10,              |
+| `for( auto i:Series<>(0,-2)) cout << i << ",";`                          | 0,-1 -2,               |
+| `for( auto i:Series<double>(7.1,7.3,0.1)) cout << i << ",";`             | 7.1,7.2,7.3,7.4,       |
+| `for( auto i:Series<MyT>(3.75,3.70,-0.02)) cout << i << ",";`            | 3.75,3.73,3.71,3.69,   |
 | `Series<> rint5{ 5 };`                                                   | Creates series object. |
-| `cout << rint5.size();`                                                 | 5                     |
-| `cout << *rint5;`                                                       | 0                     |
-| `cout << rint5++;`                                                      | 0                     |
-| `cout << *rint5;`                                                       | 1                     |
-| `cout << ++rint5;`                                                      | 2                     |
-| `cout << *rint5;`                                                       | 2                     |
-| `cout << rint5();`                                                      | 2                     |
-| `cout << *rint5;`                                                       | 0                     |
-| `cout <<rint5.size();`                                                  | 0                     |
-| `for( auto i:series(0) ) cout << i << “,”;`                              | 0,                    |
-| `for( auto i:series(1) ) cout << i << “,”;`                              | 0,                    |
-| `for( auto i:series(2) ) cout << i << “,”;`                              | 0,1,                  |
-| `for( auto i:series(3) ) cout << i << “,”;`                              | 0,1,2,                |
-| `for( auto i:series(1,3) ) cout << i << “,”;`                            | 1,2,3,                |
-| `for( auto i:series(1,3,2) ) cout << i << “,”;`                          | 1,3,                  |
-| `for( auto i:series(-3) ) cout << i << “,”;`                             | -2,-1,0,              |
+| `cout << rint5.size();`                                                  | 5                      |
+| `cout << *rint5;`                                                        | 0                      |
+| `cout << rint5++;`                                                       | 0                      |
+| `cout << *rint5;`                                                        | 1                      |
+| `cout << ++rint5;`                                                       | 2                      |
+| `cout << *rint5;`                                                        | 2                      |
+| `cout << rint5();`                                                       | 2                      |
+| `cout << *rint5;`                                                        | 0                      |
+| `cout <<rint5.size();`                                                   | 0                      |
+| `for( auto i:series(0) )     cout << i << “,”;                           | 0,                     |
+| `for( auto i:series(1) )     cout << i << “,”;                           | 0,                     |
+| `for( auto i:series(2) )     cout << i << “,”;                           | 0,1,                   |
+| `for( auto i:series(3) )     cout << i << “,”;                           | 0,1,2,                 |
+| `for( auto i:series(1,3) )   cout << i << “,”;                           | 1,2,3,                 |
+| `for( auto i:series(1,3,2) ) cout << i << “,”;`                          | 1,3,                   |
+| `for( auto i:series(-3) )    cout << i << “,”;                           | -2,-1,0,               |
 
 Files
 -----
@@ -56,8 +56,10 @@ Files
 - CMakeLists.txt
 - README.md
 - coord.h
-- series.cpp -- testing
-- series.hpp
+- series_test.cpp -- testing
+- series.hp
+
+
 ```
 
 ## License
