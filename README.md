@@ -64,7 +64,7 @@ Files
 
 ## License
 
-apache
+Apache 2.0
 
 Viewing
 -------
